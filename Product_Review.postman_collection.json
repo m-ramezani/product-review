@@ -1,0 +1,2509 @@
+{
+	"info": {
+		"_postman_id": "25d24bca-6dc2-4d98-8dd1-36539cda5d43",
+		"name": "Product_Review",
+		"description": "Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/v1",
+			"item": [
+				{
+					"name": "product-review",
+					"item": [
+						{
+							"name": "{product Id}",
+							"item": [
+								{
+									"name": "getProductReviewsForAdmin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/:productId/admin",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												":productId",
+												"admin"
+											],
+											"variable": [
+												{
+													"key": "productId",
+													"value": "<long>",
+													"description": "(Required) productId"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/admin",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"admin"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/admin",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"admin"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/admin",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"admin"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/admin",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"admin"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "getProductReviewsForUser",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/:productId/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												":productId",
+												"user"
+											],
+											"variable": [
+												{
+													"key": "productId",
+													"value": "<long>",
+													"description": "(Required) productId"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/user",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"user"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/user",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"user"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/user",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"user"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product-review/:productId/user",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product-review",
+														":productId",
+														"user"
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "approveComment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/product-review/approve-comment?approved=<boolean>&reviewId=<long>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product-review",
+										"approve-comment"
+									],
+									"query": [
+										{
+											"key": "approved",
+											"value": "<boolean>",
+											"description": "(Required) approved"
+										},
+										{
+											"key": "reviewId",
+											"value": "<long>",
+											"description": "(Required) reviewId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/approve-comment?approved=<boolean>&reviewId=<long>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"approve-comment"
+											],
+											"query": [
+												{
+													"key": "approved",
+													"value": "<boolean>"
+												},
+												{
+													"key": "reviewId",
+													"value": "<long>"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/approve-comment?approved=<boolean>&reviewId=<long>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"approve-comment"
+											],
+											"query": [
+												{
+													"key": "approved",
+													"value": "<boolean>"
+												},
+												{
+													"key": "reviewId",
+													"value": "<long>"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/approve-comment?approved=<boolean>&reviewId=<long>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"approve-comment"
+											],
+											"query": [
+												{
+													"key": "approved",
+													"value": "<boolean>"
+												},
+												{
+													"key": "reviewId",
+													"value": "<long>"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/approve-comment?approved=<boolean>&reviewId=<long>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"approve-comment"
+											],
+											"query": [
+												{
+													"key": "approved",
+													"value": "<boolean>"
+												},
+												{
+													"key": "reviewId",
+													"value": "<long>"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/approve-comment?approved=<boolean>&reviewId=<long>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"approve-comment"
+											],
+											"query": [
+												{
+													"key": "approved",
+													"value": "<boolean>"
+												},
+												{
+													"key": "reviewId",
+													"value": "<long>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "addComment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"comment\": \"<string>\",\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\",\n    \"vote\": \"<double>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/product-review/comment",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product-review",
+										"comment"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"comment\": \"<string>\",\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\",\n    \"vote\": \"<double>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/comment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"comment"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"comment\": \"<string>\",\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\",\n    \"vote\": \"<double>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/comment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"comment"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"comment\": \"<string>\",\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\",\n    \"vote\": \"<double>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/comment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"comment"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"comment\": \"<string>\",\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\",\n    \"vote\": \"<double>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/comment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"comment"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"comment\": \"<string>\",\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\",\n    \"vote\": \"<double>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product-review/comment",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product-review",
+												"comment"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "list",
+							"item": [
+								{
+									"name": "getProductsForAdmin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/list/admin?commentEnabled=<boolean>&commentEnabledForAllUsers=<boolean>&displayEnabled=<boolean>&page=<integer>&size=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"list",
+												"admin"
+											],
+											"query": [
+												{
+													"key": "commentEnabled",
+													"value": "<boolean>",
+													"description": "commentEnabled"
+												},
+												{
+													"key": "commentEnabledForAllUsers",
+													"value": "<boolean>",
+													"description": "commentEnabledForAllUsers"
+												},
+												{
+													"key": "displayEnabled",
+													"value": "<boolean>",
+													"description": "displayEnabled"
+												},
+												{
+													"key": "page",
+													"value": "<integer>",
+													"description": "(Required) page"
+												},
+												{
+													"key": "size",
+													"value": "<integer>",
+													"description": "(Required) size"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/admin?commentEnabled=<boolean>&commentEnabledForAllUsers=<boolean>&displayEnabled=<boolean>&page=<integer>&size=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"admin"
+													],
+													"query": [
+														{
+															"key": "commentEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "commentEnabledForAllUsers",
+															"value": "<boolean>"
+														},
+														{
+															"key": "displayEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/admin?commentEnabled=<boolean>&commentEnabledForAllUsers=<boolean>&displayEnabled=<boolean>&page=<integer>&size=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"admin"
+													],
+													"query": [
+														{
+															"key": "commentEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "commentEnabledForAllUsers",
+															"value": "<boolean>"
+														},
+														{
+															"key": "displayEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/admin?commentEnabled=<boolean>&commentEnabledForAllUsers=<boolean>&displayEnabled=<boolean>&page=<integer>&size=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"admin"
+													],
+													"query": [
+														{
+															"key": "commentEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "commentEnabledForAllUsers",
+															"value": "<boolean>"
+														},
+														{
+															"key": "displayEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) Authorization",
+														"key": "Authorization",
+														"value": "ea Excepteur"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/admin?commentEnabled=<boolean>&commentEnabledForAllUsers=<boolean>&displayEnabled=<boolean>&page=<integer>&size=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"admin"
+													],
+													"query": [
+														{
+															"key": "commentEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "commentEnabledForAllUsers",
+															"value": "<boolean>"
+														},
+														{
+															"key": "displayEnabled",
+															"value": "<boolean>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "getProductsForUser",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/list/user?maxPrice=<long>&minPrice=<long>&page=<integer>&size=<integer>&type=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"list",
+												"user"
+											],
+											"query": [
+												{
+													"key": "maxPrice",
+													"value": "<long>",
+													"description": "maxPrice"
+												},
+												{
+													"key": "minPrice",
+													"value": "<long>",
+													"description": "minPrice"
+												},
+												{
+													"key": "page",
+													"value": "<integer>",
+													"description": "(Required) page"
+												},
+												{
+													"key": "size",
+													"value": "<integer>",
+													"description": "(Required) size"
+												},
+												{
+													"key": "type",
+													"value": "<string>",
+													"description": "type"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/user?maxPrice=<long>&minPrice=<long>&page=<integer>&size=<integer>&type=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"user"
+													],
+													"query": [
+														{
+															"key": "maxPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "minPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														},
+														{
+															"key": "type",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/user?maxPrice=<long>&minPrice=<long>&page=<integer>&size=<integer>&type=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"user"
+													],
+													"query": [
+														{
+															"key": "maxPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "minPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														},
+														{
+															"key": "type",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/user?maxPrice=<long>&minPrice=<long>&page=<integer>&size=<integer>&type=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"user"
+													],
+													"query": [
+														{
+															"key": "maxPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "minPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														},
+														{
+															"key": "type",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/product/list/user?maxPrice=<long>&minPrice=<long>&page=<integer>&size=<integer>&type=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"product",
+														"list",
+														"user"
+													],
+													"query": [
+														{
+															"key": "maxPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "minPrice",
+															"value": "<long>"
+														},
+														{
+															"key": "page",
+															"value": "<integer>"
+														},
+														{
+															"key": "size",
+															"value": "<integer>"
+														},
+														{
+															"key": "type",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"name\": \"<string>\",\n    \"price\": \"<long>\",\n    \"type\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/product/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"name\": \"<string>\",\n    \"price\": \"<long>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/create",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"create"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"name\": \"<string>\",\n    \"price\": \"<long>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/create",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"create"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"name\": \"<string>\",\n    \"price\": \"<long>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/create",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"name\": \"<string>\",\n    \"price\": \"<long>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/create",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"create"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"name\": \"<string>\",\n    \"price\": \"<long>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/create",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"create"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "orderProduct",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/product/order-product",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"order-product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/order-product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"order-product"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/order-product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"order-product"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/order-product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"order-product"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/order-product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"order-product"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": \"<long>\",\n    \"userId\": \"<long>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/order-product",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"order-product"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "407 PROXY_AUTHENTICATION_REQUIRED"
+								}
+							]
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"price\": \"<integer>\",\n    \"type\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/product/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										"update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"price\": \"<integer>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"update"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"price\": \"<integer>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"price\": \"<integer>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"update"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"price\": \"<integer>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"update"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "(Required) Authorization",
+												"key": "Authorization",
+												"value": "ea Excepteur"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"commentEnabled\": \"<boolean>\",\n    \"commentEnabledForAllUsers\": \"<boolean>\",\n    \"displayEnabled\": \"<boolean>\",\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"price\": \"<integer>\",\n    \"type\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												"update"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getProduct",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/product/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/product/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"<string>\",\n    \"email\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"mobileNumber\": \"<string>\",\n    \"password\": \"<string>\",\n    \"roleType\": \"<string>\",\n    \"userName\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/user/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"<string>\",\n    \"email\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"mobileNumber\": \"<string>\",\n    \"password\": \"<string>\",\n    \"roleType\": \"<string>\",\n    \"userName\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"<string>\",\n    \"email\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"mobileNumber\": \"<string>\",\n    \"password\": \"<string>\",\n    \"roleType\": \"<string>\",\n    \"userName\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"<string>\",\n    \"email\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"mobileNumber\": \"<string>\",\n    \"password\": \"<string>\",\n    \"roleType\": \"<string>\",\n    \"userName\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"<string>\",\n    \"email\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"mobileNumber\": \"<string>\",\n    \"password\": \"<string>\",\n    \"roleType\": \"<string>\",\n    \"userName\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"<string>\",\n    \"email\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"mobileNumber\": \"<string>\",\n    \"password\": \"<string>\",\n    \"roleType\": \"<string>\",\n    \"userName\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/user/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "//localhost:8080/",
+			"type": "string"
+		}
+	]
+}
